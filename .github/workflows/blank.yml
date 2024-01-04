@@ -8,7 +8,7 @@ jobs:
     name: A job to say hello
     steps:
       - uses: actions/checkout@v3
-      - run: mkdir gkbdir
+      - run: mkdir sgkbdir
       - id: foo
         uses: kaibo11/testCreateAction@latest
         with:
