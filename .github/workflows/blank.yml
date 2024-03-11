@@ -23,6 +23,6 @@ jobs:
 
       - run: |
           echo "this thing works again!"
-        if: post-run-command
+        if: steps.post-run-command.outcome == 'success'
           
 
