@@ -14,7 +14,7 @@ jobs:
         with:
           who-to-greet: 'Mona the  Octocat'
 
-      - uses: actions/upload-artifact@v4
+      - uses: kaibo11/upload-artifact@v4
         with:
           name: my-artifact
           path: README.md
