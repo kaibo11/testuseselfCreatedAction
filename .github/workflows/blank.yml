@@ -14,6 +14,11 @@ jobs:
         with:
           who-to-greet: 'Mona the  Octocat'
 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: README.md
+          
       - name: Hello world action step
         id: hello
         uses: kaibo11/test-javascript-action@main
