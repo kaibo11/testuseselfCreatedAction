@@ -16,7 +16,7 @@ jobs:
 
       - name: Hello world action step
         id: hello
-        uses: kaibo11/test-javascript-action@latest
+        uses: kaibo11/test-javascript-action@main
         with:
           who-to-greet: 'Mona the  Octocat'
 
