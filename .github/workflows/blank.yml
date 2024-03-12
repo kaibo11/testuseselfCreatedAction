@@ -13,6 +13,16 @@ jobs:
         uses: kaibo11/testCreateAction@latest
         with:
           who-to-greet: 'Mona the  Octocat'
+
+      - name: Hello world action step
+        id: hello
+        uses: kaibo11/test-javascript-action@latest
+        with:
+          who-to-greet: 'Mona the  Octocat'
+
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
         
@@ -21,8 +31,5 @@ jobs:
         with:
           run: echo "this thing works!"
 
-      - run: |
-          echo "this thing works again!"
-        if: steps.post-run-command.outcome == 'success'
           
 
