@@ -1,0 +1,14 @@
+name: "test"
+description: "test"
+inputs:
+   sim_path:
+     required: false
+     description: "Docker registry"
+     
+runs:
+  using: "composite"
+  steps:
+    - name: Delete Old Tags
+      shell: bash
+      run: |
+          ll README.md
