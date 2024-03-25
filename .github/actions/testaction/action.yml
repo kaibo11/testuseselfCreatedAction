@@ -11,4 +11,4 @@ runs:
     - name: Delete Old Tags
       shell: bash
       run: |
-          ll README.md
+          ls README.md
