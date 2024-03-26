@@ -11,4 +11,6 @@ runs:
     - name: Delete Old Tags
       shell: bash
       run: |
+          version=$(git rev-parse --short HEAD)
+          echo $version
           ls README.md
